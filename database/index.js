@@ -1,5 +1,5 @@
 const server = require("./src/server");
-const { connectDB, Character, Film } = require("./src/db");
+const { connectDB } = require("./src/db");
 
 const port = process.env.PORT || 8004;
 

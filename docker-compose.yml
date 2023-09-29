@@ -1,36 +1,36 @@
-version: '4'
+version: '3'
 
 services:
   gateway:
-    container_name: gateway
+    container_name: gateway_
     restart: always
     build: ./gateway
     expose:
       - "8000:8000"
 
   character:
-    container_name: Character
+    container_name: character_
     restart: always
     build: ./characters
     expose:
       - ":8001"
 
   film:
-    container_name: Film
+    container_name: film_
     restart: always
     build: ./films
     expose:
       - ":8002"
 
   planet:
-    container_name: Planet
+    container_name: planet_
     restart: always
     build: ./planets
     expose:
       - ":8003"
   
   database:
-    container_name: database
+    container_name: database_
     restart: always
     build: ./database
     expose:

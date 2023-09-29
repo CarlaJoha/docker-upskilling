@@ -7,7 +7,6 @@ dotenv.config();
 // const planetRoutes = require("./routes/planetRoutes/index");
 const store = require("./routes");
 
-
 const server = express();
 
 server.use(express.json());

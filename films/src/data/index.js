@@ -2,7 +2,8 @@ const axios = require("axios");
 
 module.exports = {
     list: async() => {
-        const films = await axios.get("http://database:8004/Film");
+        const films = await axios.get("http://database_:8004/Film");
+        // const films = await axios.get("http://localhost:8004/Film");
        return films.data
      },
   create: async ({

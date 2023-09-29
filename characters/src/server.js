@@ -8,7 +8,7 @@ server.use(express.json());
 server.use(morgan("dev"));
 
 // console.log("3", server);
-server.use("/", charactersRoute );
+server.use("/Character", charactersRoute );
 
 //errors handler
 server.use("*", (req, res) => {

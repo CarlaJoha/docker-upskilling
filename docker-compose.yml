@@ -5,33 +5,33 @@ services:
     container_name: gateway_
     restart: always
     build: ./gateway
-    expose:
+    ports:
       - "8000:8000"
 
   character:
     container_name: character_
     restart: always
     build: ./characters
-    expose:
-      - ":8001"
+    ports:
+      - "8001:8001"
 
   film:
     container_name: film_
     restart: always
     build: ./films
-    expose:
-      - ":8002"
+    ports:
+      - "8002:8002"
 
   planet:
     container_name: planet_
     restart: always
     build: ./planets
-    expose:
-      - ":8003"
+    ports:
+      - "8003:8003"
   
   database:
     container_name: database_
     restart: always
     build: ./database
-    expose:
-      - ":8004"
+    ports:
+      - "8004:8004"
